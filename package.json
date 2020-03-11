@@ -1,5 +1,4 @@
 {
-  "homepage": "https://coulthurst.github.io/online-agent-portal",
   "name": "online-agent-portal",
   "version": "0.1.0",
   "private": true,
@@ -42,5 +41,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://coulthurst.github.io/onlineAgentPortal"
 }
