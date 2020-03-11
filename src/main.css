@@ -1,0 +1,316 @@
+/* body {
+    background: #121212;
+    color: #fff;
+} */
+
+/* .secondary-text {
+    color: rgba(255, 255, 255, .7);
+}
+
+.disabled-text {
+    color: rgba(255, 255, 255, .5);
+}
+
+.card {
+    background: #212121;
+    border-radius: 12px;
+} */
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #3F3F3F;
+}
+
+.btn-primary,
+.pagination .page-item.active .page-link  {
+    background: #004B77 !important;
+}
+.btn-primary:hover,
+.pagination .page-item.active .page-link:hover {
+    background: #003A66 !important;
+}
+a, table.table a {
+    color: #0D6CD8;
+}
+
+a:hover, table.table a:hover {
+    color: #0953B9;
+}
+
+.barBG {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 12px;
+    background-color: #ccc !important;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.barProgress {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 0px 13px rgba(0, 0, 0, .3), inset 0px 4px 4px rgba(255, 255, 255, 0.5), inset 0px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* TABLE STYLING */
+
+/* .table-bordered td, .table-bordered th {
+    border: 1px solid rgba(255, 255, 255, .25)
+}
+
+.pagination .page-item .page-link, th {
+    color: #fff;
+}
+
+td {
+    color: rgba(255, 255, 255, .7);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(255, 255, 255, .05)
+} */
+
+/* th {
+    background: #A8996E;
+    color: rgba(0, 0, 0, .7);
+} */
+
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 0px;
+}
+
+.table-responsive>.table-bordered, .table-responsive-sm>.table-bordered, .table-responsive-md>.table-bordered, .table-responsive-lg>.table-bordered, .table-responsive-xl>.table-bordered {
+    border-top: none;
+}
+
+.table-bordered td, .table-bordered th {
+    border-left: none;
+    border-right: none;
+}
+
+/* .form-control {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.7);
+    color: rgba(255,255,255,.7)
+} */
+
+/* .pagination .page-item.active .page-link {
+    background: #A8996E;
+    color: rgba(0, 0, 0, 1)
+} */
+
+/* .pagination .page-item.active .page-link:hover {
+    background: #907E50;
+} */
+
+/* table.table-hover tbody tr:hover {
+    background: rgba(0,0,0,.3);
+}
+
+.footer {
+    background: #212121;
+} */
+
+/* Navbar and Sidenav */
+
+#navbar_logo {
+    height: 40px;
+}
+
+.navbar {
+    background: #fff;
+}
+
+/* .navbar.navbar-light .breadcrumb .nav-item .nav-link, .navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,.7);
+}
+.navbar.navbar-light .breadcrumb .nav-item .nav-link:hover, 
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255,255,255,1);
+} 
+
+.dropdown-menu {
+    background: #303030;
+    color: rgba(255,255,255,.5);
+}
+
+.navbar .dropdown-menu a:not(.active) {
+    color: rgba(255,255,255,.7);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background: #A8996E;
+    color: #303030 !important;
+} */
+
+#sideNav {
+    z-index: 9999999;
+}
+
+.fa-bars {
+    color: #A8996E !important;
+}
+
+#sideNav_card {
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    box-shadow: 3px 0px 15px rgba(0, 0, 0, .5);
+    z-index: 1033;
+    transition: .3s ease-in-out;
+}
+
+#sideNav.closed #sideNav_card {
+    left: -400px;
+}
+
+#sideNav #sideNav_card {
+    left: 0px;
+}
+
+#sideNav.closed #sideNav_shadow {
+    display: none;
+}
+
+#sideNav #sideNav_shadow {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    z-index: 1032;
+    transition: .3s ease-in-out;
+}
+
+#sideNav_open {
+    display: block;
+    position: fixed;
+    right: 24px;
+    top: 16px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    z-index: 1031;
+    color: #212529;
+}
+
+#sideNav_close {
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.sideNav_banner {
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(-38deg, rgba(255, 107, 129, 1.0), rgba(30, 144, 255, 1.0));
+}
+
+.sideNav_container {
+    padding-top: 24px;
+    overflow-y: auto;
+}
+
+.sideNav_container .nav-link {
+    padding: .75rem 1.25rem;
+    border-radius: 40px !important;
+    border: none;
+    color: #212529;
+}
+
+.sideNav_container .nav-link:hover {
+    background: rgba(112, 161, 255, .3)
+}
+
+.sideNav_container .list-group-item {
+    border-radius: 40px !important;
+    border: none;
+}
+
+.nav-link .fa {
+    color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+    #sideNav_open {
+        display: none;
+    }
+}
+
+.speedometer_num {
+    margin-top: -20%;
+    padding-bottom: 10%;
+}
+
+.banner_container, .parallax_container {
+    width: 100%;
+    height: 500px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('../../imgs/light-landscape-nature-red-33041.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner_container:after, .parallax_container:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.banner_text, .parallax_text {
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, .6);
+    z-index: 9;
+}
+
+.parallax_container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --- log in form icons ---- */
+
+.md-form i {
+    top: 25% !important;
+}
+
+
+.footer_icon {
+    color: #3F3F3F;
+}
+
+.footer_icon:hover {
+    color: #1F1F1F;
+}
