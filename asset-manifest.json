@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/online-agent-portal/static/css/main.5f361e03.chunk.css",
+    "main.js": "/online-agent-portal/static/js/main.12f2d9d6.chunk.js",
+    "main.js.map": "/online-agent-portal/static/js/main.12f2d9d6.chunk.js.map",
+    "runtime-main.js": "/online-agent-portal/static/js/runtime-main.f08e13eb.js",
+    "runtime-main.js.map": "/online-agent-portal/static/js/runtime-main.f08e13eb.js.map",
+    "static/js/2.466bbfb0.chunk.js": "/online-agent-portal/static/js/2.466bbfb0.chunk.js",
+    "static/js/2.466bbfb0.chunk.js.map": "/online-agent-portal/static/js/2.466bbfb0.chunk.js.map",
+    "index.html": "/online-agent-portal/index.html",
+    "precache-manifest.30f4e13acb893cb4c045eba115906a87.js": "/online-agent-portal/precache-manifest.30f4e13acb893cb4c045eba115906a87.js",
+    "service-worker.js": "/online-agent-portal/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/online-agent-portal/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.466bbfb0.chunk.js.LICENSE.txt": "/online-agent-portal/static/js/2.466bbfb0.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/online-agent-portal/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f08e13eb.js",
+    "static/js/2.466bbfb0.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.12f2d9d6.chunk.js"
+  ]
+}
