@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/online-agent-portal/static/css/main.5f361e03.chunk.css",
-    "main.js": "/online-agent-portal/static/js/main.12f2d9d6.chunk.js",
-    "main.js.map": "/online-agent-portal/static/js/main.12f2d9d6.chunk.js.map",
-    "runtime-main.js": "/online-agent-portal/static/js/runtime-main.f08e13eb.js",
-    "runtime-main.js.map": "/online-agent-portal/static/js/runtime-main.f08e13eb.js.map",
-    "static/js/2.466bbfb0.chunk.js": "/online-agent-portal/static/js/2.466bbfb0.chunk.js",
-    "static/js/2.466bbfb0.chunk.js.map": "/online-agent-portal/static/js/2.466bbfb0.chunk.js.map",
-    "index.html": "/online-agent-portal/index.html",
-    "precache-manifest.30f4e13acb893cb4c045eba115906a87.js": "/online-agent-portal/precache-manifest.30f4e13acb893cb4c045eba115906a87.js",
-    "service-worker.js": "/online-agent-portal/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/online-agent-portal/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.466bbfb0.chunk.js.LICENSE.txt": "/online-agent-portal/static/js/2.466bbfb0.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/online-agent-portal/static/media/logo.5d5d9eef.svg"
+    "main.css": "/ONLINE_AGENT_PORTAL/static/css/main.2c5cb85b.chunk.css",
+    "main.js": "/ONLINE_AGENT_PORTAL/static/js/main.dd06b4ab.chunk.js",
+    "main.js.map": "/ONLINE_AGENT_PORTAL/static/js/main.dd06b4ab.chunk.js.map",
+    "runtime-main.js": "/ONLINE_AGENT_PORTAL/static/js/runtime-main.60ffddcb.js",
+    "runtime-main.js.map": "/ONLINE_AGENT_PORTAL/static/js/runtime-main.60ffddcb.js.map",
+    "static/css/2.1c3f1307.chunk.css": "/ONLINE_AGENT_PORTAL/static/css/2.1c3f1307.chunk.css",
+    "static/js/2.f2d33ff3.chunk.js": "/ONLINE_AGENT_PORTAL/static/js/2.f2d33ff3.chunk.js",
+    "static/js/2.f2d33ff3.chunk.js.map": "/ONLINE_AGENT_PORTAL/static/js/2.f2d33ff3.chunk.js.map",
+    "index.html": "/ONLINE_AGENT_PORTAL/index.html",
+    "precache-manifest.78f1c1de19714f7318e3494c606b4fb4.js": "/ONLINE_AGENT_PORTAL/precache-manifest.78f1c1de19714f7318e3494c606b4fb4.js",
+    "service-worker.js": "/ONLINE_AGENT_PORTAL/service-worker.js",
+    "static/css/2.1c3f1307.chunk.css.map": "/ONLINE_AGENT_PORTAL/static/css/2.1c3f1307.chunk.css.map",
+    "static/css/main.2c5cb85b.chunk.css.map": "/ONLINE_AGENT_PORTAL/static/css/main.2c5cb85b.chunk.css.map",
+    "static/js/2.f2d33ff3.chunk.js.LICENSE.txt": "/ONLINE_AGENT_PORTAL/static/js/2.f2d33ff3.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/ONLINE_AGENT_PORTAL/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/end-of-summer-push.png": "/ONLINE_AGENT_PORTAL/static/media/end-of-summer-push.bc44b375.png",
+    "static/media/all.min.css": "/ONLINE_AGENT_PORTAL/static/media/fa-solid-900.cdfec5cf.woff",
+    "static/media/fast-start.png": "/ONLINE_AGENT_PORTAL/static/media/fast-start.9758dda8.png",
+    "static/media/tempImg.jpg": "/ONLINE_AGENT_PORTAL/static/media/tempImg.58721cdd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f08e13eb.js",
-    "static/js/2.466bbfb0.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.12f2d9d6.chunk.js"
+    "static/js/runtime-main.60ffddcb.js",
+    "static/css/2.1c3f1307.chunk.css",
+    "static/js/2.f2d33ff3.chunk.js",
+    "static/css/main.2c5cb85b.chunk.css",
+    "static/js/main.dd06b4ab.chunk.js"
   ]
 }
