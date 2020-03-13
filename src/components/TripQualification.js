@@ -5,8 +5,7 @@ import {
   MDBCardText,
   MDBRow,
   MDBCard,
-  MDBCol,
-  MDBAnimation
+  MDBCol
 } from "mdbreact";
 import icon1 from "../imgs/fast-start.png";
 import icon2 from "../imgs/end-of-summer-push.png";
@@ -51,14 +50,14 @@ class TripQualification extends Component {
   render() {
     let trip = this.props.title === "fastStart" ? tripOne : tripTwo;
     return (
-      <MDBCard>
+      <MDBCard className="mt-4">
         <div className="text-center pt-4">
-          <MDBAnimation type="fadeInUp" reveal>
+          
             <img height="150px" src={trip.icon} />
-          </MDBAnimation>
+          
         </div>
         <MDBCardBody className="text-center">
-          <MDBAnimation type="fadeInUp" reveal>
+          
             <MDBCardTitle>{trip.category}</MDBCardTitle>
             <MDBCardText>{trip.date}</MDBCardText>
             <MDBCardText className="mt-5 mb-1 font-weight-bold">
@@ -66,45 +65,149 @@ class TripQualification extends Component {
             </MDBCardText>
             <MDBCardText className="mb-0">{trip.details1}</MDBCardText>
             <MDBCardText>{trip.details2}</MDBCardText>
-            <MDBCardText className="mt-5 font-weight-bold">
+            <MDBCardText className="mt-5 mb-3 font-weight-bold">
               Resort Choices
             </MDBCardText>
-          </MDBAnimation>
+          
           <MDBRow>
             <MDBCol>
-              <MDBAnimation type="fadeInUp" reveal>
+              
                 <img style={{ maxWidth: "100%" }} src={this.props.img1} />
-              </MDBAnimation>
+              
               <MDBCardText className="font-weight-bold mb-0">
                 {trip.resortOneName}
               </MDBCardText>
-              <MDBAnimation type="fadeInUp" reveal>
+              
                 <MDBCardText>{trip.resortOneLocation}</MDBCardText>
-              </MDBAnimation>
+              
             </MDBCol>
             <MDBCol>
-              <MDBAnimation type="fadeInUp" reveal>
+              
                 <img style={{ maxWidth: "100%" }} src={this.props.img1} />
-              </MDBAnimation>
-              <MDBAnimation type="fadeInUp" reveal>
+              
+              
                 <MDBCardText className="font-weight-bold mb-0">
                   {trip.resortTwoName}
                 </MDBCardText>
-              </MDBAnimation>
-              <MDBAnimation type="fadeInUp" reveal>
+              
+              
                 <MDBCardText>{trip.resortTwoLocation}</MDBCardText>
-              </MDBAnimation>
+              
             </MDBCol>
           </MDBRow>
-          <MDBRow className="mt-3">
+          <MDBRow className="mt-4">
             <MDBCol>
-            <MDBAnimation type="fadeInUp" reveal>
+            
               <a className="btn btn-dark btn-block" href="#">
                 Check out the accomodations
               </a>
-              </MDBAnimation>
+              
             </MDBCol>
           </MDBRow>
+          <MDBRow className="mt-3">
+                  <MDBCol>
+                    
+                      <p
+                        className="text-center font-weight-bold mb-4"
+                        style={{ fontSize: "30px" }}
+                      >
+                        {this.props.tripTitle}
+                      </p>
+                    
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol sm="4">
+                    <MDBRow>
+                      <MDBCol className="text-center mb-4">
+                        
+                          <img height="100px" src={icon1} />
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p className="text-center font-weight-bold mb-0">
+                            APPLICATIONS
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p
+                            className="text-center font-weight-bold"
+                            style={{ fontSize: "30px" }}
+                          >
+                            {this.props.applications}
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBCol>
+                  <MDBCol sm="4">
+                    <MDBRow>
+                      <MDBCol className="text-center mb-4">
+                        
+                          <img height="100px" src={icon1} />
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p className="text-center font-weight-bold mb-0">
+                            NEW MEMBERS
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p
+                            className="text-center font-weight-bold"
+                            style={{ fontSize: "30px" }}
+                          >
+                            {this.props.newMembers}
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBCol>
+                  <MDBCol sm="4">
+                    <MDBRow>
+                      <MDBCol className="text-center mb-4">
+                        
+                          <img height="100px" src={icon1} />
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p className="text-center font-weight-bold mb-0">
+                            NAFYC
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                    <MDBRow>
+                      <MDBCol>
+                        
+                          <p
+                            className="text-center font-weight-bold"
+                            style={{ fontSize: "30px" }}
+                          >
+                            ${this.props.nafyc}
+                          </p>
+                        
+                      </MDBCol>
+                    </MDBRow>
+                  </MDBCol>
+                </MDBRow>
         </MDBCardBody>
       </MDBCard>
     );

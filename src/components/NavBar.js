@@ -9,7 +9,8 @@ import {
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
-  MDBDropdownItem
+  MDBDropdownItem,
+  MDBContainer
 } from "mdbreact";
 import Logo from '../imgs/nmb_icon.png';
 import SideNav from './SideNav'
@@ -20,7 +21,8 @@ class NavBar extends Component {
     return (
       <div>
       <SideNav />
-      <MDBNavbar light expand="md" fixed="top">
+      <MDBNavbar light expand="md" fixed="top" scrolling>
+        <MDBContainer>
         <MDBNavbarBrand>
           <img id="navbar_logo" alt="NMB Logo" src={Logo}/>
         </MDBNavbarBrand>
@@ -28,51 +30,52 @@ class NavBar extends Component {
           <MDBNavbarNav left>
            
             <MDBNavItem>
-             <MDBNavLink to="/">Home</MDBNavLink>
+             <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/`}>HOME</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Trip Tracker</span>
+                  <span className="mr-2 font-weight-bold">TRIP TRACKER</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="/whos-on-track">Who's On Track?</MDBDropdownItem>
-                  <MDBDropdownItem href="/ytd-agent">YTD Agent</MDBDropdownItem>
-                  <MDBDropdownItem href="/ytd-agency">YTD Agnecy</MDBDropdownItem>
-                  <MDBDropdownItem href="/ytd-independents">YTD Independents</MDBDropdownItem>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/whos-on-track`}>WHO'S ON TRACK?</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/ytd-agent`}>YTD AGENT</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/ytd-agency`}>YTD AGENCY</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/ytd-independents`}>YTD INDEPENDENTS</MDBNavLink>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
-             <MDBNavLink to="/2020-fast-start-trips">2020 Fast Start Trips</MDBNavLink>
+             <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/2020-fast-start-trips`}>2020 FAST START TRIPS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2">Details</span>
+                  <span className="mr-2 font-weight-bold">DETAILS</span>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="/manager-qualifications">Manager Trip Qualifications</MDBDropdownItem>
-                  <MDBDropdownItem href="/fast-start-manager-qualifications">Fast Start Manager Trip Qualifications</MDBDropdownItem>
-                  <MDBDropdownItem href="/new-reps">New Reps</MDBDropdownItem>
-                  <MDBDropdownItem href="/trip-credits">Trip Credits</MDBDropdownItem>
-                  <MDBDropdownItem href="/accomodations">Accomodations</MDBDropdownItem>
-                  <MDBDropdownItem href="/awards">Awards</MDBDropdownItem>
-                  <MDBDropdownItem href="/terms">Terms</MDBDropdownItem>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/manager-qualifications`}>MANAGER TRIP QUALIFICATIONS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/fast-start-manager-qualifications`}>FAST START MANAGER TRIP QUALIFICATIONS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/new-reps`}>NEW REPS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/trip-credits`}>TRIP CREDITS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/accomodations`}>ACCOMODATIONS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/awards`}>AWARDS</MDBNavLink>
+                  <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/terms`}>TERMS</MDBNavLink>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
             <MDBNavItem>
-             <MDBNavLink to="/dashboard">Dashboard</MDBNavLink>
+             <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/dashboard`}>DASHBOARD</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           <MDBNavbarNav right>
           <MDBNavItem>
-             <MDBNavLink to="/Login">Log In</MDBNavLink>
+             <MDBNavLink className="font-weight-bold" to={`${process.env.PUBLIC_URL}/Login`}>LOG IN</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
           
         </MDBCollapse>
+        </MDBContainer>
       </MDBNavbar>
       </div>
     );

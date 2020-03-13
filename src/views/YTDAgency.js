@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { fetchAgencies } from "../actions";
 
 import Parallax from "../components/Parallax";
-import img from "../imgs/tempImg.jpg";
+import img from "../imgs/beach-huts.jpg";
 import OnTrackCounter from "../components/OnTrackCounter";
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import YTDAgent from "./YTDAgent";

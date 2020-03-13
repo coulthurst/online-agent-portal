@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { fetchAgents, fetchAgencies } from "../actions";
 
 import AgentList from "../components/Agent/AgentList";
@@ -14,8 +15,6 @@ import {
   MDBBtn,
   MDBAnimation
 } from "mdbreact";
-
-
 
 class AdminDashboard extends Component {
   componentDidMount() {
@@ -103,7 +102,24 @@ class AdminDashboard extends Component {
         agency: agent.agency,
         applications: agent.applications,
         newMembers: agent.newMembers,
-        view: <div><a href={`/agents/${agent.id}`} className="btn btn-primary btn-sm m-0 mr-1" size="sm">View Agent</a><a href={`/agencies/${agent.agency}`} className="btn btn-primary btn-sm m-0" size="sm">View Agency</a></div>
+        view: (
+          <div>
+            <Link
+              to={`${process.env.PUBLIC_URL}/agents/${agent.id}`}
+              className="btn btn-primary btn-sm m-0 mr-1"
+              size="sm"
+            >
+              View Agent
+            </Link>
+            <Link
+              to={`${process.env.PUBLIC_URL}/agencies/${agent.agency}`}
+              className="btn btn-primary btn-sm m-0"
+              size="sm"
+            >
+              View Agency
+            </Link>
+          </div>
+        )
       };
     });
   }
@@ -111,58 +127,58 @@ class AdminDashboard extends Component {
   render() {
     return (
       <div style={{ marginTop: "30px" }}>
-      <MDBContainer fluid >
-        <MDBRow>
-          <MDBCol md="4" className="pt-4">
-            <MDBAnimation reveal type="fadeInUp">
-            <MDBCard>
-              <MDBCardBody>
-                <MDBCardTitle>New Members</MDBCardTitle>
-                <AgentList display="newMembers" />
-              </MDBCardBody>
-            </MDBCard>
-            </MDBAnimation>
-          </MDBCol>
-          <MDBCol md="4" className="pt-4">
-          <MDBAnimation reveal type="fadeInUp" delay=".1s">
-            <MDBCard>
-              <MDBCardBody>
-                <MDBCardTitle>Applications</MDBCardTitle>
-                <AgentList display="applications" />
-              </MDBCardBody>
-            </MDBCard>
-            </MDBAnimation>
-          </MDBCol>
-          <MDBCol md="4" className="pt-4">
-          <MDBAnimation reveal type="fadeInUp" delay=".2s">
-            <MDBCard>
-              <MDBCardBody>
-                <MDBCardTitle>NAFYC</MDBCardTitle>
-                <AgentList display="nafyc" />
-              </MDBCardBody>
-            </MDBCard>
-            </MDBAnimation>
-          </MDBCol>
-        </MDBRow>
-        <MDBRow className="py-4">
-          <MDBCol>
-          <MDBAnimation reveal type="fadeInUp" delay=".3s">
-            <MDBCard>
-              <MDBCardBody>
-                <MDBCardTitle>Agents</MDBCardTitle>
-                <MDBDataTable
-                  noBottomColumns
-                  striped
-                  hover
-                  responsive
-                  data={this.renderTableData()}
-                />
-              </MDBCardBody>
-            </MDBCard>
-            </MDBAnimation>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+        <MDBContainer fluid>
+          <MDBRow>
+            <MDBCol md="4" className="pt-4">
+              <MDBAnimation reveal type="fadeInUp">
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle>New Members</MDBCardTitle>
+                    <AgentList display="newMembers" />
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBAnimation>
+            </MDBCol>
+            <MDBCol md="4" className="pt-4">
+              <MDBAnimation reveal type="fadeInUp" delay=".1s">
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle>Applications</MDBCardTitle>
+                    <AgentList display="applications" />
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBAnimation>
+            </MDBCol>
+            <MDBCol md="4" className="pt-4">
+              <MDBAnimation reveal type="fadeInUp" delay=".2s">
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle>NAFYC</MDBCardTitle>
+                    <AgentList display="nafyc" />
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBAnimation>
+            </MDBCol>
+          </MDBRow>
+          <MDBRow className="py-4">
+            <MDBCol>
+              <MDBAnimation reveal type="fadeInUp" delay=".3s">
+                <MDBCard>
+                  <MDBCardBody>
+                    <MDBCardTitle>Agents</MDBCardTitle>
+                    <MDBDataTable
+                      noBottomColumns
+                      striped
+                      hover
+                      responsive
+                      data={this.renderTableData()}
+                    />
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBAnimation>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
       </div>
     );
   }

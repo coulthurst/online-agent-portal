@@ -20,102 +20,102 @@ class OnTrack extends Component {
           </MDBRow>
         <MDBRow>
           <MDBCol lg="6" sm="12">
-            <MDBAnimation reveal type="fadeInLeft">
+            
             <MDBCard className="mb-4" >
               <MDBCardBody >
                 <h2 className="text-center mb-4" style={{ fontWeight: "700"}}>Fast Start to 2020</h2>
                 <MDBRow>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.fsA}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.fsA}/></h3>
                     <p className="text-center secondary-text">Applications</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.fsNM}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.fsNM}/></h3>
                     <p className="text-center secondary-text">New Members</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.fsND}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.fsND}/></h3>
                     <p className="text-center secondary-text mb-0">NAFYC Dollars</p>
                     <p className="text-center disabled-text">*Excludes Trip Credit</p>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-            </MDBAnimation>
+           
           </MDBCol>
           <MDBCol lg="6" sm="12">
-          <MDBAnimation reveal type="fadeInRight">
+          
             <MDBCard className="mb-4" >
               <MDBCardBody>
                 <h2 className="text-center mb-4" style={{fontWeight: "700"}}>End of Summer Push</h2>
                 <MDBRow>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.spA}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.spA}/></h3>
                     <p className="text-center secondary-text">Applications</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.spNM}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.spNM}/></h3>
                     <p className="text-center secondary-text">New Members</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.spND}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.spND}/></h3>
                     <p className="text-center mb-0 secondary-text">NAFYC Dollars</p>
                     <p className="text-center disabled-text">*Excludes Trip Credit</p>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-            </MDBAnimation>
+           
           </MDBCol>
         </MDBRow>
         <MDBRow>
           <MDBCol lg="6" sm="12">
-          <MDBAnimation reveal type="fadeInLeft">
+          
             <MDBCard className="mb-4" >
               <MDBCardBody >
                 <h2 className="text-center mb-4" style={{fontWeight: "700"}}>Leader Level</h2>
                 <MDBRow>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.ldA}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.ldA}/></h3>
                     <p className="text-center secondary-text">Applications</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.ldNM}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.ldNM}/></h3>
                     <p className="text-center secondary-text">New Members</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.ldND}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.ldND}/></h3>
                     <p className="text-center secondary-text mb-0">NAFYC Dollars</p>
                     <p className="text-center disabled-text">*Includes Trip Credit</p>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-            </MDBAnimation>
+           
           </MDBCol>
           <MDBCol lg="6" sm="12">
-          <MDBAnimation reveal type="fadeInRight">
+          
             <MDBCard >
               <MDBCardBody>
                 <h2 className="text-center mb-4" style={{ fontWeight: "700"}}>Legend Level</h2>
                 <MDBRow>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.lgA}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.lgA}/></h3>
                     <p className="text-center secondary-text">Applications</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.lgNM}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.lgNM}/></h3>
                     <p className="text-center secondary-text">New Members</p>
                   </MDBCol>
                   <MDBCol>
-                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp end={this.props.lgND}/></h3>
+                    <h3 className="text-center" style={{ fontSize: "50px", color: "rgb(36, 103, 141)"}}><CountUp delay={1} start={0} duration="2" useEasing={true} end={this.props.lgND}/></h3>
                     <p className="text-center secondary-text mb-0">NAFYC Dollars</p>
                     <p className="text-center disabled-text">*Includes Trip Credit</p>
                   </MDBCol>
                 </MDBRow>
               </MDBCardBody>
             </MDBCard>
-            </MDBAnimation>
+           
           </MDBCol>
         </MDBRow>
         <MDBRow>

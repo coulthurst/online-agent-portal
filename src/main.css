@@ -276,21 +276,35 @@ td {
     position: relative;
 }
 
-.banner_container:after, .parallax_container:after {
-    display: block;
+.banner_container:before, 
+.parallax_container:before {
+    /* display: block;
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .3); */
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: inherit;
+    background-color: #569abd;
+    opacity: 0.3;
 }
 
 .banner_text, .parallax_text {
     font-size: 4em;
-    font-weight: 600;
+    font-weight: 900;
     color: #fff;
+    letter-spacing: 1px;
     text-shadow: 2px 3px 5px rgba(0, 0, 0, .6);
-    z-index: 9;
+    z-index: 2;
+    display: block;
+    position: relative;
 }
 
 .parallax_container {
@@ -299,7 +313,20 @@ td {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.bg-img {
+    background: url('./imgs/tempImg.jpg');
+}
+.bg-img:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #569abd;
+    opacity: 0.3;
+}
 /* --- log in form icons ---- */
 
 .md-form i {
@@ -307,6 +334,13 @@ td {
 }
 
 
+.footer {
+    z-index: 9;
+    display: block;
+    position: relative;
+    background: #fff;
+    margin-top: 60px;
+}
 .footer_icon {
     color: #3F3F3F;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Parallax from "../components/Parallax";
-import img from "../imgs/tempImg.jpg";
+import img from "../imgs/pool-trees.jpg";
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import OnTrackCounter from "../components/OnTrackCounter";
 

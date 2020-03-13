@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
+
 import { fetchAgency, fetchAgents  } from "../actions";
 
 import { Line } from "react-chartjs-2";
@@ -128,7 +130,7 @@ class ManagerDashboard extends Component {
           // tripCredits: agent.tripCredits,
           // total: agent.total,
           // pending: agent.pending,
-          view: <a href={`/agents/${agent.id}`}>View</a>
+          view: <Link to={`${process.env.PUBLIC_URL}/agents/${agent.id}`}>View</Link>
         };
       });
     }

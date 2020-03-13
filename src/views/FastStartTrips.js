@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBAnimation, MDBCard, MDBCardBody } from "mdbreact";
-import Banner from "../components/Banner";
-import img from "../imgs/tempImg.jpg";
+import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody } from "mdbreact";
+import Parallax from "../components/Parallax";
+import img from "../imgs/waterpark.jpg";
+import img2 from "../imgs/tempImg.jpg";
+
 import TripQualification from "../components/TripQualification";
 import icon1 from "../imgs/fast-start.png";
+
 
 class FastStartTrips extends Component {
   render() {
     return (
       <div>
-        <Banner bg={img} text="FAST START PROGRAM" />
+        <Parallax bg={img} text="FAST START PROGRAM" />
         <MDBContainer
           fluid
           style={{ background: "#e2e2e2" }}
@@ -18,7 +21,7 @@ class FastStartTrips extends Component {
           <MDBRow>
             <MDBCol />
             <MDBCol md="8">
-              <MDBAnimation type="fadeInUp" reveal>
+              
                 <p className="text-center display-4">2020 Fast Start Program</p>
                 <p
                   className="text-center"
@@ -37,7 +40,7 @@ class FastStartTrips extends Component {
                   Credits are excluded from the Fast Start Program. We can't
                   wait to send you on these getaways!
                 </p>
-              </MDBAnimation>
+              
             </MDBCol>
             <MDBCol />
           </MDBRow>
@@ -45,236 +48,17 @@ class FastStartTrips extends Component {
         <MDBContainer>
           <MDBRow>
             <MDBCol lg="6">
-              <MDBAnimation type="fadeInLeft" reveal>
+              
 
                   
-                <TripQualification title="fastStart" img1={img} img2={img} />
-                <MDBCard className="mt-4">
-                  <MDBCardBody>
-                <MDBRow >
-                  <MDBCol>
-                    <MDBAnimation reveal type="fadeInUp">
-                      <p
-                        className="text-center font-weight-bold mb-4"
-                        style={{ fontSize: "30px" }}
-                      >
-                        Fast Start to 2020 Agent Qualifications
-                      </p>
-                    </MDBAnimation>
-                  </MDBCol>
-                </MDBRow>
-                <MDBRow>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            APPLICATIONS
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            10
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            NEW MEMBERS
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            8
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            NAFYC
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            $7,500
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                </MDBRow>
-              </MDBCardBody>
-                </MDBCard>
-              </MDBAnimation>
+                <TripQualification title="fastStart" img1={img2} img2={img2} applications={10} newMembers={8} nafyc={'7,500'}/>
+                
             </MDBCol>
             <MDBCol lg="6">
-              <MDBAnimation type="fadeInRight" reveal>
-                <TripQualification title="summerPush" img1={img} img2={img} />
-                <MDBCard className="mt-4">
-                  <MDBCardBody>
-                <MDBRow>
-                  <MDBCol>
-                    <MDBAnimation reveal type="fadeInUp">
-                      <p
-                        className="text-center font-weight-bold mb-4"
-                        style={{ fontSize: "30px" }}
-                      >
-                        End of Summer Push Agent Qualifications
-                      </p>
-                    </MDBAnimation>
-                  </MDBCol>
-                </MDBRow>
-                <MDBRow>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            APPLICATIONS
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            30
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            NEW MEMBERS
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            25
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                  <MDBCol sm="4">
-                    <MDBRow>
-                      <MDBCol className="text-center mb-4">
-                        <MDBAnimation reveal type="fadeInUp">
-                          <img height="100px" src={icon1} />
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p className="text-center font-weight-bold mb-0">
-                            NAFYC
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                        <MDBAnimation reveal type="fadeInUp">
-                          <p
-                            className="text-center font-weight-bold"
-                            style={{ fontSize: "30px" }}
-                          >
-                            $25,000
-                          </p>
-                        </MDBAnimation>
-                      </MDBCol>
-                    </MDBRow>
-                  </MDBCol>
-                </MDBRow>
-                </MDBCardBody>
-                </MDBCard>
-              </MDBAnimation>
+                <TripQualification img1={img2} img2={img2} applications={30} newMembers={25} nafyc={'25,000'}/>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        <MDBContainer></MDBContainer>
       </div>
     );
   }

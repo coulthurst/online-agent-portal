@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { fetchAgents } from "../actions";
 import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from "mdbreact";
 
-import img from "../imgs/tempImg.jpg";
+import img from "../imgs/beach-huts.jpg";
 import FastStart from "../imgs/fast-start.png";
 import SummerPush from "../imgs/end-of-summer-push.png";
 import Leader from "../imgs/leader_5.png";
