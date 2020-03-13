@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from "mdbreact";
 import Parallax from "../components/Parallax";
 import icon1 from "../imgs/fast-start.png";
-import video from "../imgs/banner_video.mp4";
+import video from "../videos/banner_video.mp4";
 import img from "../imgs/tempImg.jpg";
 import img2 from "../imgs/beach-sand.jpeg";
 import img3 from "../imgs/skyline.jpg";
@@ -13,7 +13,13 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Parallax bg={img} text="BECOME A LEADER OR BECOME A LEGEND" />
+        <div id="background-video-container">
+        <p id="video-text" className="display-1">BE A LEADER<br/> OR BECOME A LEGEND</p>
+        <video id="background-video" loop autoPlay>
+          <source src={video} type="video/mp4"/>
+        </video>
+        </div>
+        {/* <Parallax bg={img} text="BECOME A LEADER OR BECOME A LEGEND" /> */}
         <MDBContainer fluid style={{ paddingTop: "30px", background: "#fff" }}>
           <MDBRow>
             <MDBCol />
@@ -53,7 +59,7 @@ class Home extends Component {
         <MDBContainer className="py-5">
           <MDBRow>
             <MDBCol>
-              <p className="display-3 font-weight-bold">Level 01 - Leader</p>
+              <p className="display-3 font-weight-bold mb-5">Level 01 - Leader</p>
 
               <MDBRow>
                 <MDBCol sm="12" md="6">
@@ -178,7 +184,7 @@ class Home extends Component {
         <MDBContainer className="py-5">
           <MDBRow>
             <MDBCol>
-              <p className="display-3 font-weight-bold">Level 02 - Legend</p>
+              <p className="display-3 font-weight-bold mb-5">Level 02 - Legend</p>
 
               <MDBRow>
                 <MDBCol sm="12" md="6">
