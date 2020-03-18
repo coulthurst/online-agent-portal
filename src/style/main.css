@@ -1,0 +1,298 @@
+.banner_container, .parallax_container {
+  width: 100%;
+  height: 500px;
+  background: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* background: url('../../imgs/light-landscape-nature-red-33041.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.banner_container:before,
+.parallax_container:before {
+  /* display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3); */
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  height: inherit;
+  background-color: #569abd;
+  opacity: 0.3; }
+
+.banner_text, .parallax_text {
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+  z-index: 2;
+  display: block;
+  position: relative; }
+
+.parallax_container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bg-img {
+  background: url("../imgs/beach-waves.jpg") center; }
+
+.bg-img:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #569abd;
+  opacity: 0.3; }
+
+.footer {
+  z-index: 9;
+  display: block;
+  position: relative;
+  background: #fff;
+  margin-top: 60px; }
+
+.footer_icon {
+  color: #3F3F3F; }
+
+.footer_icon:hover {
+  color: #1F1F1F; }
+
+.md-form i {
+  top: 25% !important; }
+
+.btn-primary,
+.pagination .page-item.active .page-link {
+  background: #004B77 !important; }
+
+.btn-primary:hover,
+.pagination .page-item.active .page-link:hover {
+  background: #003A66 !important; }
+
+.navbar.scrolling-navbar {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.navbar.scrolling-navbar.top-nav-collapse {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.nav-link .fa {
+  color: #333; }
+
+#navbar_logo {
+  height: 40px; }
+
+.navbar {
+  background: #fff; }
+
+.nav-item a {
+  color: #4f4f4e !important;
+  font-size: 18px; }
+
+.nav-item {
+  margin: 0 11px; }
+
+.nav-item a:hover {
+  color: #2a2a2a !important; }
+
+.parallax_container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.barBG {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 12px;
+  background-color: #ccc !important;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.barProgress {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 0px 13px rgba(0, 0, 0, 0.3), inset 0px 4px 4px rgba(255, 255, 255, 0.5), inset 0px -4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 0px 13px rgba(0, 0, 0, 0.3), inset 0px 4px 4px rgba(255, 255, 255, 0.5), inset 0px -4px 4px rgba(0, 0, 0, 0.2); }
+
+#sideNav {
+  z-index: 9999999; }
+
+.fa-bars {
+  color: #A8996E !important; }
+
+#sideNav_card {
+  width: 350px;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1033;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+#sideNav.closed #sideNav_card {
+  left: -400px; }
+
+#sideNav #sideNav_card {
+  left: 0px; }
+
+#sideNav.closed #sideNav_shadow {
+  display: none; }
+
+#sideNav #sideNav_shadow {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 1032;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+#sideNav_open {
+  display: block;
+  position: fixed;
+  right: 24px;
+  top: 16px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  z-index: 1031;
+  color: #212529; }
+
+#sideNav_close {
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); }
+
+.sideNav_banner {
+  height: 200px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(128deg, #ff6b81, dodgerblue);
+  background-image: -o-linear-gradient(128deg, #ff6b81, dodgerblue);
+  background-image: linear-gradient(-38deg, #ff6b81, dodgerblue); }
+
+.sideNav_container {
+  padding-top: 24px;
+  overflow-y: auto; }
+
+.sideNav_container .nav-link {
+  padding: .75rem 1.25rem;
+  border-radius: 40px !important;
+  border: none;
+  color: #212529; }
+
+.sideNav_container .nav-link:hover {
+  background: rgba(112, 161, 255, 0.3); }
+
+.sideNav_container .list-group-item {
+  border-radius: 40px !important;
+  border: none; }
+
+@media only screen and (min-width: 768px) {
+  #sideNav_open {
+    display: none; } }
+
+.speedometer_num {
+  margin-top: -20%;
+  padding-bottom: 10%; }
+
+.table-bordered thead td, .table-bordered thead th {
+  border-bottom-width: 0px; }
+
+.table-responsive > .table-bordered, .table-responsive-sm > .table-bordered, .table-responsive-md > .table-bordered, .table-responsive-lg > .table-bordered, .table-responsive-xl > .table-bordered {
+  border-top: none; }
+
+.table-bordered td, .table-bordered th {
+  border-left: none;
+  border-right: none; }
+
+#background-video {
+  width: 100%;
+  margin-top: -105px; }
+
+#background-video-container {
+  height: 35vw;
+  margin-top: 80px;
+  overflow: hidden; }
+
+#background-video-container:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35vw;
+  background-color: #569abd;
+  opacity: 0.3;
+  margin-top: 115px; }
+
+#video-text {
+  width: 1300px;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+  font-weight: 700;
+  line-height: .9;
+  margin: 5% 25%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%); }
+
+h2 {
+  color: #4f4f4e;
+  letter-spacing: .1em; }
+
+.font-family--montserrat {
+  font-family: "Montserrat", sans-serif; }
+
+.font-family--open-sans {
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  font-family: "Open Sans", sans-serif; }

@@ -24,7 +24,7 @@ class Home extends Component {
           <MDBRow>
             <MDBCol />
             <MDBCol md="6" className="py-5 text-center">
-              <h1 className="font-weight-bold display-4">WELCOME</h1>
+              <h2 className="font-weight-bold display-4 font-family--montserrat">WELCOME</h2>
 
               <h5>We are thrilled you could join us!</h5>
 
@@ -66,7 +66,7 @@ class Home extends Component {
                   <img style={{ maxWidth: "100%" }} src={img} />
                 </MDBCol>
                 <MDBCol>
-                  <p style={{ fontSize: "30px", fontWeight: "500" }}>
+                  <p className="font-family--montserrat" style={{ fontSize: "30px", fontWeight: "700", color: "#515151", letterSpacing: ".1em" }}>
                     KANSAS CITY NAFIC CONFERENCE
                   </p>
                   <p>September 2021</p>
@@ -185,10 +185,9 @@ class Home extends Component {
           <MDBRow>
             <MDBCol>
               <p className="display-3 font-weight-bold mb-5">Level 02 - Legend</p>
-
               <MDBRow>
                 <MDBCol sm="12" md="6">
-                  <p style={{ fontSize: "30px", fontWeight: "500" }}>
+                <p className="font-family--montserrat" style={{ fontSize: "30px", fontWeight: "700", color: "#515151", letterSpacing: ".1em" }}>
                     RIVIERA MAYA, MEXICO
                   </p>
                   <p>May 2021</p>

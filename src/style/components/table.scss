@@ -1,0 +1,12 @@
+.table-bordered thead td, .table-bordered thead th {
+    border-bottom-width: 0px;
+}
+
+.table-responsive>.table-bordered, .table-responsive-sm>.table-bordered, .table-responsive-md>.table-bordered, .table-responsive-lg>.table-bordered, .table-responsive-xl>.table-bordered {
+    border-top: none;
+}
+
+.table-bordered td, .table-bordered th {
+    border-left: none;
+    border-right: none;
+}

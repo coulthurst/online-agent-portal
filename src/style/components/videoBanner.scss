@@ -1,0 +1,32 @@
+#background-video {
+    width: 100%;
+    margin-top: -105px;
+}
+#background-video-container {
+    height: 35vw;
+    margin-top: 80px;
+    overflow: hidden;
+}
+#background-video-container:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35vw;
+    background-color: #569abd;
+    opacity: 0.3;
+    margin-top: 115px;
+}
+
+#video-text {
+    width: 1300px;
+    position: absolute;
+    color: #fff;
+    z-index: 999;
+    font-weight: 700;
+    line-height: .9;
+    margin: 5% 25%;
+    transform: translateY(50%) ;
+}

@@ -1,3 +1,5 @@
+/**** THIS IS THE OLD CSS. CURRENT CSS IS LOCATED IN THE STYLE FOLDER ****/
+
 /* body {
     background: #121212;
     color: #fff;
@@ -334,20 +336,10 @@ td {
 }
 
 
-.footer {
-    z-index: 9;
-    display: block;
-    position: relative;
-    background: #fff;
-    margin-top: 60px;
-}
-.footer_icon {
-    color: #3F3F3F;
-}
 
-.footer_icon:hover {
-    color: #1F1F1F;
-}
+
+
+/* Home-page Banner */
 
 #background-video {
     width: 100%;
@@ -380,4 +372,22 @@ td {
     line-height: .9;
     margin: 5% 25%;
     transform: translateY(50%) ;
+}
+
+
+/* Footer  */
+
+.footer {
+    z-index: 9;
+    display: block;
+    position: relative;
+    background: #fff;
+    margin-top: 60px;
+}
+.footer_icon {
+    color: #3F3F3F;
+}
+
+.footer_icon:hover {
+    color: #1F1F1F;
 }
