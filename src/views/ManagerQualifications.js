@@ -177,58 +177,81 @@ class ManagerQualifications extends Component {
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-        <MDBContainer fluid className="py-5" style={{background: "linear-gradient(0deg, #8a8686 0%, #ffffff 100%)"}}>
-            <MDBContainer className="py-5">
-        <MDBRow>
-            <MDBCol>
-              <p className="text-center display-4 font-weight-bold ">
-                The Management Team
-              </p>
-            </MDBCol>
-          </MDBRow>
-          <MDBRow className="py-5">
-            <MDBCol sm="12" md="4">
-              <MDBRow>
-                <MDBCol className="text-center mb-4">
-                  <img  src={person1} />
-                </MDBCol>
-              </MDBRow>
-              <MDBRow>
-                <MDBCol>
-                  <p className="text-center font-weight-bold mb-0">
-                  Becky Helmberger
-                  </p>
-                </MDBCol>
-              </MDBRow>
-            </MDBCol>
-            <MDBCol sm="12" md="4">
-              <MDBRow>
-                <MDBCol className="text-center mb-4">
-                  <img  src={person2} />
-                </MDBCol>
-              </MDBRow>
-              <MDBRow>
-                <MDBCol>
-                  <p className="text-center font-weight-bold mb-0">
-                  Bill Rutten
-                  </p>
-                </MDBCol>
-              </MDBRow>
-            </MDBCol>
-            <MDBCol sm="12" md="4">
-              <MDBRow>
-                <MDBCol className="text-center mb-4">
-                  <img  src={person3} />
-                </MDBCol>
-              </MDBRow>
-              <MDBRow>
-                <MDBCol>
-                  <p className="text-center font-weight-bold mb-0">Kent Stadler</p>
-                </MDBCol>
-              </MDBRow>
-            </MDBCol>
-          </MDBRow>
+        <MDBContainer
+          fluid
+          className="py-5"
+          style={{
+            background: "linear-gradient(0deg, #8a8686 0%, #ffffff 100%)"
+          }}
+        >
+          <MDBContainer className="py-5">
+            <MDBRow>
+              <MDBCol>
+                <p className="text-center display-4 font-weight-bold ">
+                  The Management Team
+                </p>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow className="py-5">
+              <MDBCol sm="12" md="4">
+                <MDBRow>
+                  <MDBCol className="text-center mb-4">
+                    <img src={person1} />
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol>
+                    <p className="text-center font-weight-bold mb-0">
+                      Becky Helmberger
+                    </p>
+                  </MDBCol>
+                </MDBRow>
+              </MDBCol>
+              <MDBCol sm="12" md="4">
+                <MDBRow>
+                  <MDBCol className="text-center mb-4">
+                    <img src={person2} />
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol>
+                    <p className="text-center font-weight-bold mb-0">
+                      Bill Rutten
+                    </p>
+                  </MDBCol>
+                </MDBRow>
+              </MDBCol>
+              <MDBCol sm="12" md="4">
+                <MDBRow>
+                  <MDBCol className="text-center mb-4">
+                    <img src={person3} />
+                  </MDBCol>
+                </MDBRow>
+                <MDBRow>
+                  <MDBCol>
+                    <p className="text-center font-weight-bold mb-0">
+                      Kent Stadler
+                    </p>
+                  </MDBCol>
+                </MDBRow>
+              </MDBCol>
+            </MDBRow>
           </MDBContainer>
+        </MDBContainer>
+        <MDBContainer className="py-5 text-center">
+          <MDBRow>
+            <MDBCol>
+              <h4 className="mb-5">
+                SR VP of Member Acquisition & Engagement Qualifications
+              </h4>
+              <h2 className="mb-3">2021 Leader Level ​NAFIC Conference</h2>
+              <p>MINIMUM QUALIFIERS</p>
+              <p>2</p>
+              <h2 className="mt-5 mb-3">2021 Legend Level ​Mexico</h2>
+              <p>MINIMUM QUALIFIERS</p>
+              <p>4</p>
+            </MDBCol>
+          </MDBRow>
         </MDBContainer>
       </div>
     );

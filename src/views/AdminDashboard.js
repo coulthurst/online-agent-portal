@@ -20,6 +20,23 @@ class AdminDashboard extends Component {
   componentDidMount() {
     this.props.fetchAgents();
     this.props.fetchAgencies();
+    var myHeaders = new Headers();
+    myHeaders.append("Access-Control-Allow-Origin", "http://localhost");
+    myHeaders.append("Content-Type", "application/json");
+    
+    var raw = JSON.stringify({"agencyInput":{"id":"99","year":"2020"}});
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch("http://testapps.nmblife.org/AgentDashSvc/AgtDash.svc/dashboardInfo/GetAgencyDetails", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
   }
 
   renderTableData() {
