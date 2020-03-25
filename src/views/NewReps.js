@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import Parallax from "../components/Parallax";
+import img from "../imgs/beach-rocks.jpg";
 
 class NewReps extends Component {
     render() {
-        return <div>New Reps</div>
+        return (<div>
+            <Parallax bg={img} />
+        </div>)
     }
 }
 

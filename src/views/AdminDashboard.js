@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { fetchAgents, fetchAgencies } from "../actions";
+import { fetchAgents, fetchAgencies, fetchData } from "../actions";
 
 import AgentList from "../components/Agent/AgentList";
 import {
@@ -20,6 +20,24 @@ class AdminDashboard extends Component {
   componentDidMount() {
     this.props.fetchAgents();
     this.props.fetchAgencies();
+    this.props.fetchData();
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({ "agencyInput": { "id": "99", "year": "2020" } });
+
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("http://testapps.nmblife.org/AgentDashSvc/AgtDash.svc/dashboardInfo/GetAgencyDetails", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
   }
 
   renderTableData() {
@@ -125,6 +143,7 @@ class AdminDashboard extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div style={{ marginTop: "30px" }}>
         <MDBContainer fluid>
@@ -185,9 +204,9 @@ class AdminDashboard extends Component {
 }
 
 const mapStateToProps = state => {
-  return { agents: state.agents, agencies: state.agencies };
+  return { agents: state.agents, agencies: state.agencies, data: state.data };
 };
 
-export default connect(mapStateToProps, { fetchAgents, fetchAgencies })(
+export default connect(mapStateToProps, { fetchAgents, fetchAgencies, fetchData })(
   AdminDashboard
 );
