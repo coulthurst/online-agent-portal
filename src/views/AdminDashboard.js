@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { fetchAgents, fetchAgencies } from "../actions";
+import { fetchAgents, fetchAgencies, fetchData } from "../actions";
 
 import AgentList from "../components/Agent/AgentList";
 import {
@@ -20,19 +20,33 @@ class AdminDashboard extends Component {
   componentDidMount() {
     this.props.fetchAgents();
     this.props.fetchAgencies();
+<<<<<<< HEAD
     var myHeaders = new Headers();
     myHeaders.append("Access-Control-Allow-Origin", "http://localhost");
     myHeaders.append("Content-Type", "application/json");
     
     var raw = JSON.stringify({"agencyInput":{"id":"99","year":"2020"}});
     
+=======
+    this.props.fetchData();
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({ "agencyInput": { "id": "99", "year": "2020" } });
+
+>>>>>>> 8afdbaeadef4f4731d128922a6819b3157bbae45
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
       body: raw,
       redirect: 'follow'
     };
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 8afdbaeadef4f4731d128922a6819b3157bbae45
     fetch("http://testapps.nmblife.org/AgentDashSvc/AgtDash.svc/dashboardInfo/GetAgencyDetails", requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
@@ -142,6 +156,7 @@ class AdminDashboard extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div style={{ marginTop: "30px" }}>
         <MDBContainer fluid>
@@ -202,9 +217,9 @@ class AdminDashboard extends Component {
 }
 
 const mapStateToProps = state => {
-  return { agents: state.agents, agencies: state.agencies };
+  return { agents: state.agents, agencies: state.agencies, data: state.data };
 };
 
-export default connect(mapStateToProps, { fetchAgents, fetchAgencies })(
+export default connect(mapStateToProps, { fetchAgents, fetchAgencies, fetchData })(
   AdminDashboard
 );

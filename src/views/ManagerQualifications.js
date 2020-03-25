@@ -252,6 +252,181 @@ class ManagerQualifications extends Component {
               <p>4</p>
             </MDBCol>
           </MDBRow>
+          <MDBRow>
+            <MDBCol>
+              <h4 className="mb-5">
+                Sales Director Qualifications
+              </h4>
+            </MDBCol>
+          </MDBRow>
+          <MDBRow>
+            <MDBCol>
+              <h2 className="mb-3">2021 Leader Level
+​NAFIC Conference</h2>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        SALES CAPACITY INCREASE
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        10%
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        NEW MEMBERS
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        700
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        NAFYC INCREASE OVER 2019
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        10%
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+            </MDBCol>
+
+
+            <MDBCol>
+              <h2 className="mb-3">2021 Legend Level
+​Mexico</h2>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        SALES CAPACITY INCREASE
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        25%
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        NEW MEMBERS
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        1,000
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+              <MDBRow>
+                <MDBCol>
+                  <MDBRow >
+                    <MDBCol className="text-center">
+                      <img height="150px" src={icon1} />
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p className="text-center font-weight-bold mb-0">
+                        NAFYC INCREASE OVER 2019
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
+                    <MDBCol className="text-center">
+                      <p
+                        className="text-center font-weight-bold"
+                        style={{ fontSize: "48px" }}
+                      >
+                        20%
+                  </p>
+                    </MDBCol>
+                  </MDBRow>
+                </MDBCol>
+              </MDBRow>
+            </MDBCol>
+          </MDBRow>
         </MDBContainer>
       </div>
     );

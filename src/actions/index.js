@@ -1,9 +1,9 @@
-// import agentData from "../apis/agentData";
+import agentData from "../apis/agentData";
 import jsonPlaceholder from "../apis/jsonPlaceholder";
 
 export const fetchAgents = () => async dispatch => {
     const response = await jsonPlaceholder.get("/agents");
-    
+
     dispatch({ type: "FETCH_AGENTS", payload: response.data });
 };
 
@@ -25,3 +25,16 @@ export const fetchAgencies = () => async dispatch => {
     dispatch({ type: "FETCH_AGENCIES", payload: response.data });
 }
 
+export const fetchData = () => async dispatch => {
+    const response = agentData.get('/GetAgencyDetails',
+        {
+            "agencyInput": {
+                "id": "1",
+                "year": "2020"
+            }
+        }
+    );
+    console.log(response)
+
+    dispatch({ type: "FETCH_TEST", payload: response.data })
+}
