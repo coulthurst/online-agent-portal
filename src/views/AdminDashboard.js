@@ -20,14 +20,6 @@ class AdminDashboard extends Component {
   componentDidMount() {
     this.props.fetchAgents();
     this.props.fetchAgencies();
-<<<<<<< HEAD
-    var myHeaders = new Headers();
-    myHeaders.append("Access-Control-Allow-Origin", "http://localhost");
-    myHeaders.append("Content-Type", "application/json");
-    
-    var raw = JSON.stringify({"agencyInput":{"id":"99","year":"2020"}});
-    
-=======
     this.props.fetchData();
 
     var myHeaders = new Headers();
@@ -35,21 +27,15 @@ class AdminDashboard extends Component {
 
     var raw = JSON.stringify({ "agencyInput": { "id": "99", "year": "2020" } });
 
->>>>>>> 8afdbaeadef4f4731d128922a6819b3157bbae45
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
       body: raw,
       redirect: 'follow'
     };
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 8afdbaeadef4f4731d128922a6819b3157bbae45
     fetch("http://testapps.nmblife.org/AgentDashSvc/AgtDash.svc/dashboardInfo/GetAgencyDetails", requestOptions)
       .then(response => response.text())
-      .then(result => console.log(result))
+      .then(result => this.setState({data: result}))
       .catch(error => console.log('error', error));
   }
 
@@ -156,7 +142,8 @@ class AdminDashboard extends Component {
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.state)
+    let a = JSON.parse(this.state.data)
     return (
       <div style={{ marginTop: "30px" }}>
         <MDBContainer fluid>
