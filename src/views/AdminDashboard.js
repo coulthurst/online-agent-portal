@@ -20,13 +20,14 @@ class AdminDashboard extends Component {
   componentDidMount() {
     this.props.fetchAgents();
     this.props.fetchAgencies();
-    this.props.fetchData();
+    // this.props.fetchData();
 
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    // var myHeaders = new Headers();
+    // myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify({ "agencyInput": { "id": "99", "year": "2020" } });
+    // var raw = JSON.stringify({ "agencyInput": { "id": "99", "year": "2020" } });
 
+<<<<<<< HEAD
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
@@ -37,6 +38,19 @@ class AdminDashboard extends Component {
       .then(response => response.text())
       .then(result => this.setState({data: result}))
       .catch(error => console.log('error', error));
+=======
+    // var requestOptions = {
+    //   method: 'POST',
+    //   headers: myHeaders,
+    //   body: raw,
+    //   redirect: 'follow'
+    // };
+
+    // fetch("http://testapps.nmblife.org/AgentDashSvc/AgtDash.svc/dashboardInfo/GetAgencyDetails", requestOptions)
+    //   .then(response => response.text())
+    //   .then(result => console.log(JSON.parse(result))
+    //     .catch(error => console.log('error', error));
+>>>>>>> 806999d96722dcecf8b3df689f8b93b92b23c259
   }
 
   renderTableData() {
@@ -142,8 +156,11 @@ class AdminDashboard extends Component {
   }
 
   render() {
+<<<<<<< HEAD
     console.log(this.state)
     let a = JSON.parse(this.state.data)
+=======
+>>>>>>> 806999d96722dcecf8b3df689f8b93b92b23c259
     return (
       <div style={{ marginTop: "30px" }}>
         <MDBContainer fluid>
